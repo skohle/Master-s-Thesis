@@ -28,12 +28,12 @@ mmin = 2000;               % minimal number of finite elements in space discreti
 n = 500;                 % number of time instances
 r = 3;                  % rank of POD basis 
 r_deim= 10;             % number of interpolation points for DEIM
-opt_mode=0;             % 0: Optimization with steepest descent
+opt_mode=1;             % 0: Optimization with steepest descent
                         % 1: Optimization with non-linear CG
                         % 2: Optimization with BFGS
                         % 3: Optimization with semi-smooth Newton
                         
-mode = 0;               % 0: Computation by FE method and by POD method
+mode = 2;               % 0: Computation by FE method and by POD method
                         % 1: Computation by FE method
                         % 2: Computation by POD method
 
@@ -41,7 +41,7 @@ pod_mode=0;             % 0: Computation by POD and POD-DEIM
                         % 1: Computations by POD
                         % 2: Computations by POD-DEIM
                                                 
-%errormode = 0;          % 0: no computation of analytical a-posteriori-estimate
+errormode = 0;          % 0: no computation of analytical a-posteriori-estimate
                         % 1: computation of analytical a-posteriori-estimate 
                         %     (very complex)
     
